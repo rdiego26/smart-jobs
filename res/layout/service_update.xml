@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+alt_servico/container_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        style="@style/RegUptActivity"
+        >
+        
+		    <TextView 
+				android:id="@+alt_servico/lbl_nome_cliente"
+				android:text="@string/lbl_cliente"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Label"
+			/>
+		    
+	        <Spinner 
+	            android:id="@+alt_servico/spn_cliente"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            />
+        
+		    <TextView 
+				android:id="@+alt_servico/lbl_tipo_servico"
+				android:text="@string/lbl_type_of_service"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Label"
+			/>
+		    
+	        <Spinner 
+	            android:id="@+alt_servico/spn_tipo_servico"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            />	        
+	        
+
+		    <TextView 
+				android:id="@+alt_servico/lbl_nome_servico"
+				android:text="@string/lbl_service"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Label"
+			/>
+		    
+		   <EditText 
+		       android:id="@+alt_servico/txt_nome_servico"
+		       style="@style/InputName"
+		       android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:maxLength="20"
+		       />        
+		       
+		    <TextView 
+				android:id="@+alt_servico/lbl_data_servico"
+				android:text="@string/lbl_service_date"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Label"
+			/>
+		    
+		    <Button 
+		        android:id="@+alt_servico/btn_data"
+		        android:text="@string/lbl_service_date"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:onClick="setServiceDate"
+		    />
+		    
+		    <TextView 
+				android:id="@+alt_servico/lbl_preco_servico"
+				android:text="@string/lbl_service_price"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Label"
+			/>		   
+		   
+		   <EditText 
+		       android:id="@+alt_servico/txt_preco_servico"
+ 		       style="@style/Input"
+		       android:inputType="numberDecimal"
+		       android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+		       />  		    
+
+		    <TextView 
+				android:id="@+alt_servico/lbl_detalhes_servico"
+				android:text="@string/lbl_service_details"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				style="@style/Label"
+			/>
+		    
+		   <EditText 
+		       android:id="@+alt_servico/txt_detalhes_servico"
+		       style="@style/Input"
+		       android:inputType="textMultiLine"
+		       android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+		       android:lines="3"
+		       />
+		   
+		   	<Button 
+		       android:text="@string/btn_update"
+		       android:id="@+alt_servico/btn_atualizar" 
+		       android:onClick="update"
+			   style="@style/RegisterUpdateButton"
+			   android:background="@drawable/custom_button"
+		       />
+        
+    </LinearLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    style="@style/RegUptActivity">
+    
+    
+    <TextView 
+		android:text="@string/lbl_type_of_service"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		style="@style/Label"
+	/>
+    
+   <EditText 
+       android:id="@+alt_tipo_servico/txt_nome_tipo_servico"
+       style="@style/InputName"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:maxLength="30"
+       />
+  
+   	<Button 
+		android:text="@string/btn_update"
+		android:id="@+alt_tipo_servico/btn_atualizar" 
+		android:onClick="update"
+	   style="@style/RegisterUpdateButton"
+	   android:background="@drawable/custom_button"
+       />
+    
+    
+</LinearLayout>

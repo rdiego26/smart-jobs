@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/bluegradient"
+>
+   
+    <TableRow
+		android:id="@+id/client_spinner_tableRow1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		>
+		
+        <ImageView
+			android:layout_width="32sp"
+			android:src="@drawable/users_family"
+			android:contentDescription="@string/lbl_cliente"
+			android:layout_height="32sp" />
+        
+        <TextView android:textSize="22sp"
+			android:text="@string/lbl_cliente"
+			android:textStyle="bold"
+			android:layout_width="fill_parent"
+			android:id="@+id/SpinnerClientItem_name"
+			android:layout_height="fill_parent"
+			android:paddingLeft="5sp" />
+        
+    </TableRow>
+     
+</TableLayout>

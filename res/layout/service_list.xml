@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/linearlayout_background">
+    
+    <RelativeLayout
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/custom_border">    
+    
+		    <ListView 
+		        android:id="@+id/service_list_list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:scrollbars="vertical" 
+		        android:divider="@drawable/listview_divider"/> 
+		    
+		    <TextView 
+		        android:id="@+id/service_empty_list"
+		        android:text="@string/empty_list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:textSize="25sp"
+		        android:gravity="center_vertical|center_horizontal"
+		        />    
+
+    </RelativeLayout>
+    
+</RelativeLayout>

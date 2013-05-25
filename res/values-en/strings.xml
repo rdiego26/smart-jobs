@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Smart Jobs</string>
+    <string name="title_splash_screen">Smart Jobs</string>
+    <string name="ADMOB_PUBLISHER_ID">a14f902a49ada86</string>
+    
+    <!--  Splash Screen -->
+	<string name="logoDesc">Logo</string>
+	
+	<!--  DashBoard -->
+	<string name="config">Settings</string>
+	<string name="clients">Customers</string>
+	<string name="type_of_service">Tipe of Service</string>
+	<string name="services">Services</string>
+	
+	<!-- Type Of Service List -->
+	<string name="type_of_service_title">Type of Service</string>
+	
+	<!-- Type Of Service Register -->
+	<string name="lbl_type_of_service">Type of Service</string>
+
+	<!-- Client List -->
+	<string name="client_title">Customer</string>	
+	
+	<!-- Client Register -->
+	<string name="lbl_cliente">Customer</string>
+	<string name="lbl_endereco">Address</string>
+	<string name="lbl_telefone">Telephone</string>
+	<string name="lbl_celular">Celular</string>
+	<string name="lbl_email">Email</string>
+
+	<!-- Service List -->
+	<string name="service_title">Service</string>		
+
+	<!-- Service Register -->
+	<string name="lbl_service">Service</string>
+	<string name="lbl_service_date">Date</string>
+	<string name="lbl_service_price">Price</string>
+	<string name="lbl_service_details">Details</string>	
+	<string name="type_of_service_spinner_prompt">Select the Type of Service: </string>
+	<string name="client_spinner_prompt">Select the Customer: </string>
+			
+		
+	<!-- Validations and Empty messages -->
+	<string name="empty_list">No data to display. Press the option button to register.</string>
+	<string name="dscWarningIcon">Warning</string>
+		<!-- Type of Service -->
+		<string name="type_of_service_duplicate">Type of service already exists.</string>
+		<string name="type_of_service_blank">Type of service is required.</string>
+		<string name="type_of_service_error">There was an error while trying to perform the operation.</string>
+		<string name="type_of_service_sucess">Operation successful.</string>
+
+		<!-- Client -->
+		<string name="client_name_duplicate">Customer already exists.</string>
+		<string name="client_name_blank">Customer Name is required.</string>
+		<string name="client_phone_blank">Enter a phone number.</string>
+		<string name="client_celular_blank">Enter a celular number.</string>
+		<string name="client_address_blank">Enter an address.</string>
+		<string name="client_email_blank">Enter an e-mail.</string>
+		<string name="client_error">There was an error while trying to perform the operation.</string>
+		<string name="client_sucess">Operation successful.</string>		
+
+		<!-- Service -->
+	    <string name="service_date_blank">Enter the date.</string>
+	    <string name="service_name_blank">Enter the name of the Service.</string>
+	    <string name="service_client_blank">Inform the customer.</string>
+	    <string name="service_type_of_service_blank">Enter the type of service.</string>
+		<string name="service_error">There was an error while trying to perform the operation.</string>
+		<string name="service_sucess">Operation successful.</string>	    
+	    
+	    
+	<!-- Context Menu messages -->
+	<string name="context_menu_update">Update</string>
+	<string name="context_menu_delete">Delete</string>
+	<string name="context_menu_register">Register</string>
+	
+	<!-- Standard Buttons -->
+	<string name="btn_register">Register</string>
+	<string name="btn_update">Update</string>
+	<string name="btn_call">Call</string>
+	<string name="btn_email">Email</string>
+	<string name="btn_address">Address</string>
+	
+	<!-- Standard Messages -->	
+	<string name="send_email">Send E-mail</string>
+	
+	<!-- Rate Messages -->
+	<string name="rate_msg_title">Rate </string>
+	<string name="rate_msg1">If you like to use </string>
+	<string name="rate_msg2">, please invest a moment to evaluate the same. Thanks for the help!</string>
+	<string name="rate_msg_btn_remind">Remind me later</string>
+	<string name="rate_msg_btn_no">No, Thanks</string>
+	
+	<!-- maintenance Messages -->
+	<string name="under_constructior_msg">Under construction </string>    
+    
+    
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+    package="info.diegoramos.smartjobs2"
+=======
+    package="info.diegoramos.smartjobs"
+>>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk 
+        android:minSdkVersion="8"
+         />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/toolbox"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="info.diegoramos.smartjobs.view.MainActivity"
+            android:label="@string/app_name" 
+   			android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="info.diegoramos.smartjobs.view.Splash"
+            android:label="@string/title_splash_screen"
+			android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<!-- TypeOfService [ INI ] -->
+        <activity
+            android:name="info.diegoramos.smartjobs.view.TypeOfServiceList"
+            android:label="@string/type_of_service_title" >
+        </activity>
+        
+        <activity
+            android:name="info.diegoramos.smartjobs.view.TypeOfServiceRegister"
+            android:label="@string/type_of_service_title" >
+        </activity>   
+
+        <activity
+            android:name="info.diegoramos.smartjobs.view.TypeOfServiceUpdate"
+            android:label="@string/type_of_service_title" >
+        </activity>        
+		<!-- TypeOfService [ END ] -->
+		
+		<!-- Client [ INI ] -->
+        <activity
+            android:name="info.diegoramos.smartjobs.view.ClientList"
+            android:label="@string/client_title" >
+        </activity>        		
+
+        <activity
+            android:name="info.diegoramos.smartjobs.view.ClientRegister"
+            android:label="@string/client_title" >
+        </activity>        
+
+        <activity
+            android:name="info.diegoramos.smartjobs.view.ClientUpdate"
+            android:label="@string/client_title" >
+        </activity>        
+        <!-- Client [ END ] -->
+        
+		<!-- Service [ INI ] -->
+        <activity
+            android:name="info.diegoramos.smartjobs.view.ServiceList"
+            android:label="@string/service_title" >
+        </activity> 		
+
+        <activity
+            android:name="info.diegoramos.smartjobs.view.ServiceRegister"
+            android:label="@string/service_title" >
+        </activity>         
+
+        <activity
+            android:name="info.diegoramos.smartjobs.view.ServiceUpdate"
+            android:label="@string/service_title" >
+        </activity>           
+        <!-- Service [ END ] -->
+        
+		<!-- ADMOB -->
+		<activity android:name="com.google.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" />
+    	<!-- ADMOB -->        
+        
+        		
+    </application>
+
+</manifest>

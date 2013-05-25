@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout
+	    android:id="@+alt_cliente/container_principal"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    style="@style/RegUptActivity"
+	    >
+    
+	    <TextView 
+			android:id="@+alt_cliente/lbl_nome_cliente"
+			android:text="@string/lbl_cliente"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			style="@style/Label"
+		/>
+	    
+	   <EditText 
+	       android:id="@+alt_cliente/txt_nome_cliente"
+	       style="@style/InputName"
+	       android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:maxLength="30"
+	       />
+	  
+	    <TextView 
+	        android:id="@+alt_cliente/lbl_endereco_cliente"
+			android:text="@string/lbl_endereco"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			style="@style/Label"
+		/>
+
+	   <LinearLayout
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content"
+	       android:orientation="horizontal"
+	       android:id="@+alt_cliente/grupo_endereco_cliente"
+	       >	    
+	    	    
+		   <EditText 
+		       android:id="@+alt_cliente/txt_endereco_cliente"
+		       style="@style/Input"
+		       android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:width="210dp"
+			   android:maxLength="50"
+		       />  
+		       
+		    <ImageButton
+		       android:id="@+alt_cliente/btn_endereco"
+			   android:text="@string/btn_address"
+			   android:src="@drawable/signpost"
+			   android:contentDescription="@string/btn_address"
+			   android:clickable="true"
+			   android:onClick="contato"
+			   style="@style/ButtonParent"
+			   android:background="@drawable/custom_button"        
+		        />		   
+		   
+	   </LinearLayout>
+	      
+	    <TextView 
+	        android:id="@+alt_cliente/lbl_telefone_cliente"
+			android:text="@string/lbl_telefone"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			style="@style/Label"
+		/>
+	   
+	
+	   <LinearLayout
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content"
+	       android:orientation="horizontal"
+	       android:id="@+alt_cliente/grupo_telefone_cliente"
+	       >
+	
+		    <EditText 
+		       android:id="@+alt_cliente/txt_telefone_cliente"
+		       style="@style/Input"
+		       android:inputType="phone"
+		       android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:width="210dp"
+			   android:maxLength="10"
+		       />     
+		       
+		    <ImageButton
+		       android:id="@+alt_cliente/btn_ligar_telefone"
+			   android:text="@string/btn_call"
+			   android:src="@drawable/user1_telephone"
+			   android:contentDescription="@string/btn_call"
+			   android:clickable="true"
+			   android:onClick="contato"
+			   style="@style/ButtonParent"
+			   android:background="@drawable/custom_button"        
+		        />
+	   </LinearLayout>   
+	   
+	    <TextView 
+	        android:id="@+alt_cliente/lbl_celular_cliente"
+			android:text="@string/lbl_celular"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			style="@style/Label"
+		/>
+	    
+
+	   <LinearLayout
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content"
+	       android:orientation="horizontal"
+	       android:id="@+alt_cliente/grupo_celular_cliente"
+	       >	    
+	    
+		    <EditText 
+		       android:id="@+alt_cliente/txt_celular_cliente"
+		       style="@style/Input"
+		       android:inputType="phone"
+		       android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:width="210dp"
+			   android:maxLength="10"
+		       />
+		    
+			    <ImageButton
+			       android:id="@+alt_cliente/btn_ligar_celular"
+				   android:text="@string/btn_call"
+				   android:src="@drawable/user1_mobilephone"
+				   android:contentDescription="@string/btn_call"
+				   android:clickable="true"
+				   android:onClick="contato"        
+				   style="@style/ButtonParent"
+				   android:background="@drawable/custom_button"
+			        />	    
+	    </LinearLayout>   
+	   
+	    <TextView 
+	        android:id="@+alt_cliente/lbl_email_cliente"
+			android:text="@string/lbl_email"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			style="@style/Label"
+		/>
+
+	   <LinearLayout
+	       android:layout_height="wrap_content"
+	       android:layout_width="wrap_content"
+	       android:orientation="horizontal"
+	       android:id="@+alt_cliente/grupo_email_cliente"
+	       >	    
+	    	    
+		   <EditText 
+		       android:id="@+alt_cliente/txt_email_cliente"
+		       style="@style/Input"
+		       android:inputType="textEmailAddress"
+		       android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:width="210dp"
+			   android:maxLength="100"
+		       />    
+
+			    <ImageButton
+			       android:id="@+alt_cliente/btn_enviar_email"
+				   android:text="@string/btn_email"
+				   android:contentDescription="@string/btn_email"
+				   android:src="@drawable/user1_message"
+				   android:clickable="true"
+				   android:onClick="contato"        
+				   style="@style/ButtonParent"
+				   android:background="@drawable/custom_button"
+			        />			   		       
+		   
+
+	   </LinearLayout>	 
+	   
+	   
+		<Button 
+	       android:text="@string/btn_update"
+	       android:id="@+alt_cliente/btn_atualizar" 
+	       android:onClick="update"
+		   style="@style/RegisterUpdateButton"
+		   android:background="@drawable/custom_button"
+	       />
+	    
+	    
+	</LinearLayout>
+
+</TableLayout>

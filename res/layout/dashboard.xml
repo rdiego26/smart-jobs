@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    style="@style/TitleText">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        style="@style/TitleText" />
+
+    
+    <!-- Options -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#015488" >
+        
+        <TextView 
+            android:id="@+id/customers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/users_family"
+            android:onClick="trataOpcao"
+            android:text="@string/clients"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+        
+        <TextView
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/customers"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/screwdriver"
+            android:onClick="trataOpcao"
+            android:text="@string/services"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+        
+        
+        <TextView
+            android:id="@+id/type_of_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/customers"
+            android:layout_alignParentBottom="true"            
+            android:layout_marginBottom="120dp"
+            android:clickable="true"
+            android:drawableTop="@drawable/toolbox"
+            android:onClick="trataOpcao"
+            android:text="@string/type_of_service"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />        
+        
+        <TextView 
+            android:id="@+id/config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/type_of_service"
+            android:layout_alignRight="@id/services"
+            android:clickable="true"
+            android:drawableTop="@drawable/wrench"
+            android:onClick="trataOpcao"
+            android:text="@string/config"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"                        
+            />
+        
+
+		    <com.google.ads.AdView android:id="@+id/ad"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                ads:adSize="BANNER"
+		                ads:adUnitId="@string/ADMOB_PUBLISHER_ID"
+		                ads:loadAdOnCreate="true"/>        
+      </RelativeLayout>
+    
+
+    
+    
+</LinearLayout>

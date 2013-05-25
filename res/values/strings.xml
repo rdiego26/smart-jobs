@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Smart Jobs</string>
+    <string name="title_splash_screen">Smart Jobs</string>
+    <string name="ADMOB_PUBLISHER_ID">a1517ed306dd567</string>
+    
+    <!--  Splash Screen -->
+	<string name="logoDesc">Logo</string>
+	
+	<!--  DashBoard -->
+	<string name="config">Configurações</string>
+	<string name="clients">Clientes</string>
+	<string name="type_of_service">Tipo de Serviço</string>
+	<string name="services">Serviços</string>
+	
+	<!-- Type Of Service List -->
+	<string name="type_of_service_title">Tipo de Serviço</string>
+	
+	<!-- Type Of Service Register -->
+	<string name="lbl_type_of_service">Tipo de Serviço</string>
+
+	<!-- Client List -->
+	<string name="client_title">Cliente</string>	
+	
+	<!-- Client Register -->
+	<string name="lbl_cliente">Cliente</string>
+	<string name="lbl_endereco">Endereço</string>
+	<string name="lbl_telefone">Telefone</string>
+	<string name="lbl_celular">Celular</string>
+	<string name="lbl_email">Email</string>
+
+	<!-- Service List -->
+	<string name="service_title">Serviço</string>		
+
+	<!-- Service Register -->
+	<string name="lbl_service">Serviço</string>
+	<string name="lbl_service_date">Data</string>
+	<string name="lbl_service_price">Preço</string>
+	<string name="lbl_service_details">Detalhes</string>	
+	<string name="type_of_service_spinner_prompt">Selecione Tipo de Serviço: </string>
+	<string name="client_spinner_prompt">Selecione o Cliente: </string>
+			
+		
+	<!-- Validations and Empty messages -->
+	<string name="empty_list">Não existem dados a exibir. Pressione o botão de opções para fazer o cadastro.</string>
+	<string name="dscWarningIcon">Atenção</string>
+		<!-- Type of Service -->
+		<string name="type_of_service_duplicate">Tipo de serviço já existe.</string>
+		<string name="type_of_service_blank">Tipo de serviço é obrigatório.</string>
+		<string name="type_of_service_error">Houve um erro ao tentar realizar a operação.</string>
+		<string name="type_of_service_sucess">Operação realizada com sucesso.</string>
+
+		<!-- Client -->
+		<string name="client_name_duplicate">Cliente já existe.</string>
+		<string name="client_name_blank">Nome do Cliente é obrigatório.</string>
+		<string name="client_phone_blank">Informe um número de telefone.</string>
+		<string name="client_celular_blank">Informe um número de celular.</string>
+		<string name="client_address_blank">Informe um endereço.</string>
+		<string name="client_email_blank">Informe um e-mail.</string>
+		<string name="client_error">Houve um erro ao tentar realizar a operação.</string>
+		<string name="client_sucess">Operação realizada com sucesso.</string>		
+
+		<!-- Service -->
+	    <string name="service_date_blank">Informe a data.</string>
+	    <string name="service_name_blank">Informe o nome do Serviço.</string>
+	    <string name="service_client_blank">Informe o cliente.</string>
+	    <string name="service_type_of_service_blank">Informe o tipo de serviço.</string>
+		<string name="service_error">Houve um erro ao tentar realizar a operação.</string>
+		<string name="service_sucess">Operação realizada com sucesso.</string>	    
+	    
+	    
+	<!-- Context Menu messages -->
+	<string name="context_menu_update">Atualizar</string>
+	<string name="context_menu_delete">Excluir</string>
+	<string name="context_menu_register">Cadastrar</string>
+	
+	<!-- Standard Buttons -->
+	<string name="btn_register">Cadastrar</string>
+	<string name="btn_update">Atualizar</string>
+	<string name="btn_call">Ligar</string>
+	<string name="btn_email">Email</string>
+	<string name="btn_address">Endereço</string>
+	
+	<!-- Standard Messages -->	
+	<string name="send_email">Enviar E-mail</string>
+	
+	<!-- Rate Messages -->
+	<string name="rate_msg_title">Avaliar </string>
+	<string name="rate_msg1">Se você gostou de usar o </string>
+	<string name="rate_msg2" tools:ignore="Typos">, por favor invista um momento para avaliar o mesmo. Obrigado pela ajuda!</string>
+	<string name="rate_msg_btn_remind">Lembre-me depois</string>
+	<string name="rate_msg_btn_no">Não, obrigado</string>
+	
+	<!-- maintenance Messages -->
+	<string name="under_constructior_msg">Em construção </string>
+		
+</resources>
