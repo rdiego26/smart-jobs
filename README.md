@@ -9,3 +9,8 @@ Smart Jobs é uma app mobile para gerenciamento de serviços, freelas, etc. Idea
 Licença
 -------
 O Alergias é software livre e é distribuído sobre a licença [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html).
+
+Agradecimentos
+-------
+- ActionBar by ActionBar [johannilsson](https://github.com/johannilsson/android-actionbar)
+- Daniel C. Bucher [@danielbucher](https://github.com/danielbucher/)
