@@ -1,12 +1,8 @@
 package info.diegoramos.smartjobs.persistence;
 
-<<<<<<< HEAD
 import info.diegoramos.smartjobs.model.Client;
 import info.diegoramos.smartjobs.model.Service;
 import info.diegoramos.smartjobs.model.TypeOfService;
-=======
-import info.diegoramos.smartjobs.model.Service;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 
 import java.util.ArrayList;
 import java.util.List;
@@ -182,7 +178,6 @@ public class DAOService {
 		return false;
 	}	
 	
-<<<<<<< HEAD
 	/**
 	 * Verifica se o Tipo de Serviço é utilizado em algum Serviço
 	 * @param typeOfService
@@ -211,8 +206,6 @@ public class DAOService {
 		return false;
 	}	
 	
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 	public List<Service> findAll()
 	{
 		List<Service> list = new ArrayList<Service>();

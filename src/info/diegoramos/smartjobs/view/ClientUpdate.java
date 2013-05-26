@@ -1,33 +1,21 @@
 package info.diegoramos.smartjobs.view;
 
-<<<<<<< HEAD
-=======
-import info.diegoramos.smartjobs.R;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import info.diegoramos.smartjobs.model.Client;
 import info.diegoramos.smartjobs.persistence.DAOClient;
 import info.diegoramos.smartjobs.utils.ToastManager;
 import info.diegoramos.smartjobs.utils.Validations;
-<<<<<<< HEAD
 import info.diegoramos.smartjobs2.R;
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-<<<<<<< HEAD
 import android.view.Window;
 import android.widget.EditText;
 
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.AbstractAction;
 
-=======
-import android.widget.EditText;
-
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 public class ClientUpdate extends Activity {
 
 	private DAOClient daoC = null;
@@ -55,7 +43,6 @@ public class ClientUpdate extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-<<<<<<< HEAD
 		/* Remove title bar */
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
@@ -63,10 +50,6 @@ public class ClientUpdate extends Activity {
 		
 		configureActionBar();
 		
-=======
-		setContentView(R.layout.client_update);
-		
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 		//Components
 		txtClient = (EditText) findViewById(R.alt_cliente.txt_nome_cliente);
 		txtAddress = (EditText) findViewById(R.alt_cliente.txt_endereco_cliente);
@@ -192,7 +175,6 @@ public class ClientUpdate extends Activity {
 		}
 	}
 	
-<<<<<<< HEAD
 	/**
 	 * Configura a ActionBar
 	 */
@@ -235,7 +217,3 @@ public class ClientUpdate extends Activity {
     }
 	/* Abstraction Actions for ActionBar -- FIM */			
 }
-=======
-	
-}
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd

@@ -3,14 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-	<LinearLayout
+  	<com.markupartist.android.widget.ActionBar
+     android:id="@+id/actionbar_client_update"
+     style="@style/ActionBar" />  
+	      
+   	<LinearLayout
 	    android:id="@+alt_cliente/container_principal"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
 	    android:orientation="vertical"
 	    style="@style/RegUptActivity"
 	    >
-    
+
+	          
 	    <TextView 
 			android:id="@+alt_cliente/lbl_nome_cliente"
 			android:text="@string/lbl_cliente"

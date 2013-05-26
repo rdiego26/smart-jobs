@@ -1,16 +1,9 @@
 package info.diegoramos.smartjobs.view;
 
-<<<<<<< HEAD
 import info.diegoramos.smartjobs.model.Service;
 import info.diegoramos.smartjobs.persistence.DAOService;
 import info.diegoramos.smartjobs.utils.ToastManager;
 import info.diegoramos.smartjobs2.R;
-=======
-import info.diegoramos.smartjobs.R;
-import info.diegoramos.smartjobs.model.Service;
-import info.diegoramos.smartjobs.persistence.DAOService;
-import info.diegoramos.smartjobs.utils.ToastManager;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 
 import java.util.Calendar;
 import java.util.Date;
@@ -21,27 +14,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
-<<<<<<< HEAD
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-=======
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-<<<<<<< HEAD
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.AbstractAction;
 
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 public class ServiceList extends Activity {
 
 	private DAOService daoS;
@@ -58,15 +41,11 @@ public class ServiceList extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-<<<<<<< HEAD
 		/* Remove title bar */
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.service_list);
 		configureActionBar();
-=======
-		setContentView(R.layout.service_list);
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 		
 		listV = (ListView) findViewById(R.id.service_list_list);
 		//Simple tap in ListView item
@@ -108,39 +87,6 @@ public class ServiceList extends Activity {
 		super.onRestart();
 		loadList();
 	}
-<<<<<<< HEAD
-=======
-	
-	//Menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-   	
-    	MenuInflater inflater = getMenuInflater();
-    	inflater.inflate(R.menu.service_list_menu, menu);
-   	
-    	return true;
-    }
-
-    //Menu item selected
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-    	Intent intent;
-    	
-    	switch (item.getItemId())
-    	{
-    		case R.service_list_menu.register:
-    			intent = new Intent(this, ServiceRegister.class);
-    			startActivity(intent);
-    			return true;
-    	
-    		default:
-    			return false;
-    	}
-    	
-    }
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
     
     //ContextMenu
     @Override
@@ -152,11 +98,6 @@ public class ServiceList extends Activity {
     	AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
     	posicao = info.position;
     	
-<<<<<<< HEAD
-=======
-    	
-    	
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
     }
     
     @Override
@@ -214,11 +155,7 @@ public class ServiceList extends Activity {
     			Date dt = new Date(s.getDate());
     			Calendar c = Calendar.getInstance();
     			c.setTime(dt);
-<<<<<<< HEAD
     			int month = c.get(Calendar.MONTH) + 1;
-=======
-    			int month = c.get(Calendar.MONTH);// + 1;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
     			
     			sb.append(s.getName() + "\n " + 
     					c.get(Calendar.DAY_OF_MONTH) + "/" + 
@@ -239,7 +176,6 @@ public class ServiceList extends Activity {
     		
     	
     }
-<<<<<<< HEAD
     
 	/**
 	 * Configura a ActionBar
@@ -297,6 +233,4 @@ public class ServiceList extends Activity {
         }
     }    
 	/* Abstraction Actions for ActionBar -- FIM */	
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 }

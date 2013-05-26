@@ -1,9 +1,5 @@
 package info.diegoramos.smartjobs.view;
 
-<<<<<<< HEAD
-=======
-import info.diegoramos.smartjobs.R;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import info.diegoramos.smartjobs.components.ClienteSpinnerAdapter;
 import info.diegoramos.smartjobs.components.TypeOfServiceSpinnerAdapter;
 import info.diegoramos.smartjobs.model.Client;
@@ -14,35 +10,24 @@ import info.diegoramos.smartjobs.persistence.DAOService;
 import info.diegoramos.smartjobs.persistence.DAOTypeOfService;
 import info.diegoramos.smartjobs.utils.ToastManager;
 import info.diegoramos.smartjobs.utils.Validations;
-<<<<<<< HEAD
 import info.diegoramos.smartjobs2.R;
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 
 import java.util.Calendar;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
-<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-=======
-import android.os.Bundle;
-import android.view.View;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-<<<<<<< HEAD
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.AbstractAction;
 
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 public class ServiceRegister extends Activity {
 
 	
@@ -74,15 +59,11 @@ public class ServiceRegister extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-<<<<<<< HEAD
 		/* Remove title bar */
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.service_register);
 		configureActionBar();
-=======
-		setContentView(R.layout.service_register);
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 		
 		//Initializing components
 		spnClient = (Spinner) findViewById(R.cad_servico.spn_cliente);
@@ -205,7 +186,6 @@ public class ServiceRegister extends Activity {
 			}
 		}
 	}
-<<<<<<< HEAD
 
 	/**
 	 * Configura a ActionBar
@@ -248,6 +228,3 @@ public class ServiceRegister extends Activity {
     }
 	/* Abstraction Actions for ActionBar -- FIM */
 }
-=======
-}
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd

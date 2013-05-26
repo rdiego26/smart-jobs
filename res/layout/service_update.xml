@@ -11,6 +11,10 @@
         style="@style/RegUptActivity"
         >
         
+      	  <com.markupartist.android.widget.ActionBar
+	      android:id="@+id/actionbar_service_update"
+	      style="@style/ActionBar"/>	
+        
 		    <TextView 
 				android:id="@+alt_servico/lbl_nome_cliente"
 				android:text="@string/lbl_cliente"

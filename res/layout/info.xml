@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/info_header" 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        >
+		   	<com.markupartist.android.widget.ActionBar
+		      android:id="@+id/actionbar_info"
+		      style="@style/ActionBar" />        
+    </LinearLayout>
+    
+	<RelativeLayout
+	    android:layout_below="@id/info_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/linearlayout_background">
+		
+	
+		    <LinearLayout
+			android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@drawable/custom_border"
+		    android:orientation="vertical"
+		    >
+		
+			    <TextView
+			        android:id="@+id/lblAppVersion"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lbl_appVersion"
+			        style="@style/Label"
+			        />
+	
+			    	<TextView
+			        android:id="@+id/txtAppVersion"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        style="@style/LabelDetails"
+			        />
+			    	
+				    <TextView
+				        android:id="@+id/lblCodeBy"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/lbl_codeBy"
+				        style="@style/Label"
+				        />
+
+			    	<TextView
+			        android:id="@+id/txtCodeBy"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        style="@style/LabelDetails"
+			        />
+			    	
+				    <TextView
+				        android:id="@+id/lblLicense"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/lbl_license"
+				        style="@style/Label"
+				        />
+
+			    	<TextView
+			        android:id="@+id/txtLicense"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text=""
+			        style="@style/LabelDetails"
+			        />
+			    					    					    
+				    <TextView
+				        android:id="@+id/lblAuthorEmail"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="@string/emailAuthor"
+				        style="@style/Label"
+				        android:clickable="true"
+				        android:onClick="enviarEmail"
+				        />
+			    					    			    		    		
+		    </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

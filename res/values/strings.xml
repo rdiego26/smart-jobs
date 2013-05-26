@@ -5,6 +5,24 @@
     <string name="title_splash_screen">Smart Jobs</string>
     <string name="ADMOB_PUBLISHER_ID">a1517ed306dd567</string>
     
+    <!-- Indeed Search -->
+    <string name="txt_term_hint">Termo</string>
+    <string name="txt_location_hint">Localização</string>
+    <string name="btn_search">Buscar</string>
+    	<!-- Indeed List Item -->
+    	<string name="lbl_indeed_search_jobtitle">Título</string>
+    	<string name="lbl_indeed_search_company">Empresa</string>
+    	<string name="lbl_indeed_search_snippet">Resumo</string>
+
+    
+    <!-- Sobre / Info -->    
+    <string name="lbl_appVersion">Versão: </string>
+    <string name="lbl_codeBy">Desenvolvido por: </string>
+    <string name="developer">Diego do Nascimento Ramos</string>
+    <string name="lbl_license">Licença de uso</string>
+    <string name="licenseContract">O programa é gratuito. Caso encontre algum problema ou tenha alguma sugestão, entre em contato: </string>
+    <string name="emailAuthor">rdiego26@gmail.com</string>
+    
     <!--  Splash Screen -->
 	<string name="logoDesc">Logo</string>
 	
@@ -21,7 +39,7 @@
 	<string name="lbl_type_of_service">Tipo de Serviço</string>
 
 	<!-- Client List -->
-	<string name="client_title">Cliente</string>	
+	<string name="client_title">Clientes</string>	
 	
 	<!-- Client Register -->
 	<string name="lbl_cliente">Cliente</string>
@@ -31,7 +49,7 @@
 	<string name="lbl_email">Email</string>
 
 	<!-- Service List -->
-	<string name="service_title">Serviço</string>		
+	<string name="service_title">Serviços</string>		
 
 	<!-- Service Register -->
 	<string name="lbl_service">Serviço</string>

@@ -1,6 +1,5 @@
 package info.diegoramos.smartjobs.view;
 
-<<<<<<< HEAD
 import info.diegoramos.smartjobs.model.Client;
 import info.diegoramos.smartjobs.persistence.DAOClient;
 import info.diegoramos.smartjobs.utils.ToastManager;
@@ -9,43 +8,22 @@ import info.diegoramos.smartjobs2.R;
 import java.util.List;
 
 import android.app.Activity;
-=======
-import info.diegoramos.smartjobs.R;
-import info.diegoramos.smartjobs.model.Client;
-import info.diegoramos.smartjobs.persistence.DAOClient;
-import info.diegoramos.smartjobs.utils.ToastManager;
-
-import java.util.List;
-
-import roboguice.activity.RoboActivity;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
-<<<<<<< HEAD
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-=======
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-<<<<<<< HEAD
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.AbstractAction;
 
 public class ClientList extends Activity {
-=======
-public class ClientList extends RoboActivity {
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 
 	private DAOClient daoC;
 	private List<Client> list;
@@ -62,12 +40,9 @@ public class ClientList extends RoboActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-<<<<<<< HEAD
 		/* Remove title bar */
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 		setContentView(R.layout.client_list);
 		
 		listV = (ListView) findViewById(R.id.client_list_list);
@@ -92,10 +67,7 @@ public class ClientList extends RoboActivity {
 		registerForContextMenu(listV);
 		daoC = DAOClient.getInstance(this);
 		loadList();
-<<<<<<< HEAD
 		configureActionBar();
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 		
 	}
 	
@@ -117,38 +89,6 @@ public class ClientList extends RoboActivity {
 		loadList();
 	}
 	
-<<<<<<< HEAD
-=======
-	//Menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-   	
-    	MenuInflater inflater = getMenuInflater();
-    	inflater.inflate(R.menu.client_list_menu, menu);
-   	
-    	return true;
-    }
-
-    //Menu item selected
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-    	Intent intent;
-    	
-    	switch (item.getItemId())
-    	{
-    		case R.client_list_menu.register:
-    			intent = new Intent(this, ClientRegister.class);
-    			startActivity(intent);
-    			return true;
-    	
-    		default:
-    			return false;
-    	}
-    	
-    }
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 	
     //ContextMenu
     @Override
@@ -231,7 +171,6 @@ public class ClientList extends RoboActivity {
 	}
 	
  }
-<<<<<<< HEAD
 
 	/**
 	 * Configura a ActionBar
@@ -290,7 +229,5 @@ public class ClientList extends RoboActivity {
         }
     }    
 	/* Abstraction Actions for ActionBar -- FIM */	
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 	
 }

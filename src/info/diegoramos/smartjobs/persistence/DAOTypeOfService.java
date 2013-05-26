@@ -1,16 +1,10 @@
 package info.diegoramos.smartjobs.persistence;
 
-<<<<<<< HEAD
 import info.diegoramos.smartjobs.model.TypeOfService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-=======
-import java.util.ArrayList;
-import java.util.List;
-import info.diegoramos.smartjobs.model.TypeOfService;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -86,7 +80,6 @@ public class DAOTypeOfService {
 		if( !daoTOS.findById(id) )
 		{
 			result = -1;
-<<<<<<< HEAD
 		} else {
 			TypeOfService typeOfService = daoTOS.getById(id);
 			
@@ -110,28 +103,6 @@ public class DAOTypeOfService {
 			}else {
 				result = -1;
 			}
-=======
-		}
-		else
-		{
-			try
-			{
-				
-				db.beginTransaction();
-				db.delete(DAO.TBL_TYPE_OF_SERVICE, FIELD_TYPE_OF_SERVICE[0] + " = ?", new String[]{String.valueOf(id)});
-				db.setTransactionSuccessful();
-			}
-			catch (Exception e)
-			{
-				e.printStackTrace();
-				result = -1;
-			}
-			finally
-			{
-				db.endTransaction();
-			}
-			
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 		}
 
 		return result;
@@ -192,7 +163,6 @@ public class DAOTypeOfService {
 		return TOS;
 	}
 	
-<<<<<<< HEAD
 	public TypeOfService loadTypeOfServiceById(int id) {
 		Cursor c = db.query(DAO.TBL_TYPE_OF_SERVICE, null, FIELD_TYPE_OF_SERVICE[0] + " = " + id, null, null, null, "name ASC");
 		TypeOfService typeOfService = null;
@@ -203,8 +173,6 @@ public class DAOTypeOfService {
 		
 		return typeOfService;
 	}
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 	
 	public List<TypeOfService> getAll()
 	{
@@ -320,7 +288,6 @@ public class DAOTypeOfService {
 		Cursor c = db.rawQuery("SELECT COUNT(*) FROM " + DAO.TBL_TYPE_OF_SERVICE, null);
 		
 		return c.getInt(0);
-<<<<<<< HEAD
 	}
 	
 	/**
@@ -339,8 +306,3 @@ public class DAOTypeOfService {
 	}
 	
 }
-=======
-	}	
-	
-}
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd

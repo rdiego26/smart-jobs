@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/lbl_job_title_indeed_result"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/Label"
+        android:text="@string/lbl_indeed_search_jobtitle"
+        />
+    
+    <EditText 
+        android:id="@+id/txt_job_title_indeed_result"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:inputType="none"        
+        />
+
+</RelativeLayout>

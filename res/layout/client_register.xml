@@ -5,6 +5,9 @@
     android:orientation="vertical" 
     style="@style/RegUptActivity">
     
+   	<com.markupartist.android.widget.ActionBar
+      android:id="@+id/actionbar_client_register"
+      style="@style/ActionBar" />    
     
     <TextView 
 		android:id="@+cad_cliente/lbl_nome_cliente"

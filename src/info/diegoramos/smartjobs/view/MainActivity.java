@@ -1,26 +1,17 @@
 package info.diegoramos.smartjobs.view;
 
-<<<<<<< HEAD
 import info.diegoramos.smartjobs.utils.AppRater;
 import info.diegoramos.smartjobs.utils.ToastManager;
 import info.diegoramos.smartjobs2.R;
-=======
-import info.diegoramos.smartjobs.R;
-import info.diegoramos.smartjobs.utils.AppRater;
-import info.diegoramos.smartjobs.utils.ToastManager;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 
-<<<<<<< HEAD
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.AbstractAction;
 
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 public class MainActivity extends Activity{
 
     @Override
@@ -31,7 +22,6 @@ public class MainActivity extends Activity{
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.dashboard);
         
-<<<<<<< HEAD
         /* Apply ActionBar */
         configureActionbar();
         
@@ -39,10 +29,6 @@ public class MainActivity extends Activity{
         
         startActivity(new Intent(this, IndeedSearch.class));
      
-=======
-        AppRater.app_launched(this);
-        
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
     }
 
     public void trataOpcao(View vw) {
@@ -68,7 +54,6 @@ public class MainActivity extends Activity{
     			break;
     	}
     }
-<<<<<<< HEAD
 
     private void configureActionbar() {
     	ActionBar actionBar = (ActionBar) findViewById(R.id.actionbar_mainactivity);
@@ -121,8 +106,3 @@ public class MainActivity extends Activity{
     
     /* Abstraction Actions for ActionBar -- FIM */
 }         
-=======
-    
-    
-}
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd

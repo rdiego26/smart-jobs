@@ -1,35 +1,35 @@
-package info.diegoramos.smartjobs.view;
+package info.diegoramos.smartjobs;
 
-import info.diegoramos.smartjobs.utils.AppInfo;
 import info.diegoramos.smartjobs2.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
-import android.view.Window;
 import android.widget.TextView;
 
 public class Splash extends Activity implements Runnable{
-
-	private long splashTime = 4000; /* 4 seconds */
-	private Handler h;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-        /* Remove title bar */
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.splash);
 
-		//PackageInfo pinfo = null;
+		PackageInfo pinfo = null;
 		TextView txtVersaoApp = (TextView) findViewById(R.id.version_app);
 		
-		txtVersaoApp.setText(AppInfo.getVersion(getApplicationContext()));
+		try {
+			   pinfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+			   txtVersaoApp.setText(pinfo.versionName);
+			 }
+		catch (Exception e) {
+			   e.printStackTrace();
+			 }		
 		
-		h = new Handler();
-		h.postDelayed(this, splashTime);
+		
+		Handler h = new Handler();
+		h.postDelayed(this, 3000); //milis
 		}
 	
 	public void run(){

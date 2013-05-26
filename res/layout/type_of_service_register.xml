@@ -5,6 +5,9 @@
     android:orientation="vertical" 
     style="@style/RegUptActivity">
     
+   	<com.markupartist.android.widget.ActionBar
+      android:id="@+id/actionbar_type_of_service_register"
+      style="@style/ActionBar" />    
     
     <TextView 
 		android:text="@string/lbl_type_of_service"

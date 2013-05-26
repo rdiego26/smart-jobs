@@ -107,11 +107,7 @@ public class DAOClient {
 		return result;
 	}		
 	
-<<<<<<< HEAD
 	public long delete(int id, Context ctx)
-=======
-	public Integer delete(int id, Context ctx)
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 	{
 		
 		Integer result = 0;
@@ -119,7 +115,6 @@ public class DAOClient {
 		DAOClient daoC;
 		daoC = DAOClient.getInstance(ctx);
 		
-<<<<<<< HEAD
 		if( !daoC.findById(id) ) {
 			result = -1;
 		}
@@ -147,30 +142,6 @@ public class DAOClient {
 			else {
 				result = -1;
 			}
-=======
-		if( !daoC.findById(id) )
-		{
-			result = -1;
-		}
-		else
-		{
-			try
-			{
-				
-				db.beginTransaction();
-				db.delete(DAO.TBL_CLIENT, FIELD_CLIENT[0] + " = ?", new String[]{String.valueOf(id)});
-				db.setTransactionSuccessful();
-			}
-			catch (Exception e)
-			{
-				e.printStackTrace();
-				result = -1;
-			}
-			finally
-			{
-				db.endTransaction();
-			}
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 			
 		}
 
@@ -310,7 +281,6 @@ public class DAOClient {
 		
 		return c.getInt(0);
 	}
-<<<<<<< HEAD
 
 	
 	/**
@@ -329,7 +299,3 @@ public class DAOClient {
 	}	
 	
 }
-=======
-	
-}
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd

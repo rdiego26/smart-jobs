@@ -1,14 +1,9 @@
 package info.diegoramos.smartjobs.view;
 
-<<<<<<< HEAD
-=======
-import info.diegoramos.smartjobs.R;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import info.diegoramos.smartjobs.model.TypeOfService;
 import info.diegoramos.smartjobs.persistence.DAOTypeOfService;
 import info.diegoramos.smartjobs.utils.ToastManager;
 import info.diegoramos.smartjobs.utils.Validations;
-<<<<<<< HEAD
 import info.diegoramos.smartjobs2.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,13 +15,6 @@ import android.widget.EditText;
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.AbstractAction;
 
-=======
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 public class TypeOfServiceRegister extends Activity{
 
 	private DAOTypeOfService DaoTOS;
@@ -45,16 +33,12 @@ public class TypeOfServiceRegister extends Activity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-<<<<<<< HEAD
 		
 		/* Remove title bar */
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 
 		setContentView(R.layout.type_of_service_register);
 		configureActionBar();
-=======
-		setContentView(R.layout.type_of_service_register);
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 	}
 	
 	public void register(View vw) {
@@ -84,7 +68,6 @@ public class TypeOfServiceRegister extends Activity{
 		}
 		
 	}
-<<<<<<< HEAD
 	
 	/**
 	 * Configura a ActionBar
@@ -130,6 +113,4 @@ public class TypeOfServiceRegister extends Activity{
     }
 	/* Abstraction Actions for ActionBar -- FIM */	
 	
-=======
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 }

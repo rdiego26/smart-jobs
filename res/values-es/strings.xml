@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Smart Jobs</string>
+    <string name="title_splash_screen">Smart Jobs</string>
+    <string name="ADMOB_PUBLISHER_ID">a14f902a49ada86</string>
+
+    <!-- Indeed Search -->
+    <string name="txt_term_hint">Plazo</string>
+    <string name="txt_location_hint">Ubicación</string>
+    <string name="btn_search">Buscar</string>    
+    	<!-- Indeed List Item -->
+    	<string name="lbl_indeed_search_jobtitle">Título</string>
+    	<string name="lbl_indeed_search_company">Negocios</string>
+    	<string name="lbl_indeed_search_snippet">Resumen</string>    
+    
+    <!-- Sobre / Info -->    
+    <string name="lbl_appVersion">Versión: </string>
+    <string name="lbl_codeBy">Desarrollado por: </string>
+    <string name="developer">Diego do Nascimento Ramos</string>
+    <string name="lbl_license">Licencia de uso</string>
+    <string name="licenseContract">El programa es gratuito. Si tiene algún problema o tiene alguna sugerencia, por favor póngase en contacto con: </string>
+    <string name="emailAuthor">rdiego26@gmail.com</string>
+    
+    <!--  Splash Screen -->
+	<string name="logoDesc">Logo</string>
+	
+	<!--  DashBoard -->
+	<string name="config">Configuración</string>
+	<string name="clients">Clientes</string>
+	<string name="type_of_service">Tipo de Servicio</string>
+	<string name="services">Servicios</string>
+	
+	<!-- Type Of Service List -->
+	<string name="type_of_service_title">Tipo de Servicio</string>
+	
+	<!-- Type Of Service Register -->
+	<string name="lbl_type_of_service">Tipo de Servicio</string>
+
+	<!-- Client List -->
+	<string name="client_title">Cliente</string>	
+	
+	<!-- Client Register -->
+	<string name="lbl_cliente">Cliente</string>
+	<string name="lbl_endereco">Dirección</string>
+	<string name="lbl_telefone">Teléfono</string>
+	<string name="lbl_celular">Celular</string>
+	<string name="lbl_email">Email</string>
+
+	<!-- Service List -->
+	<string name="service_title">Servicios</string>		
+
+	<!-- Service Register -->
+	<string name="lbl_service">Servicio</string>
+	<string name="lbl_service_date">Fecha</string>
+	<string name="lbl_service_price">Precio</string>
+	<string name="lbl_service_details">Detalles</string>	
+	<string name="type_of_service_spinner_prompt">Seleccione el tipo de servicio: </string>
+	<string name="client_spinner_prompt">Seleccione el Cliente: </string>
+			
+		
+	<!-- Validations and Empty messages -->
+	<string name="empty_list">No hay datos para mostrar. Pulse el botón de opción de registrarse.</string>
+	<string name="dscWarningIcon">Advertencia</string>
+		<!-- Type of Service -->
+		<string name="type_of_service_duplicate">Tipo de servicio que ya existe.</string>
+		<string name="type_of_service_blank">Se requiere Tipo de servicio.</string>
+		<string name="type_of_service_error">Se produjo un error al intentar realizar la operación.</string>
+		<string name="type_of_service_sucess">Operación exitosa.</string>
+
+		<!-- Client -->
+		<string name="client_name_duplicate">Ya existe Cliente.</string>
+		<string name="client_name_blank">El nombre es requerido al Cliente.</string>
+		<string name="client_phone_blank">Introduzca un número de teléfono.</string>
+		<string name="client_celular_blank">Introduzca un número de celular.</string>
+		<string name="client_address_blank">Introduzca una dirección.</string>
+		<string name="client_email_blank">Introduzca uno e-mail.</string>
+		<string name="client_error">Se produjo un error al intentar realizar la operación.</string>
+		<string name="client_sucess">Operación exitosa.</string>		
+
+		<!-- Service -->
+	    <string name="service_date_blank">Entre la fecha.</string>
+	    <string name="service_name_blank">Introduzca el nombre del servicio.</string>
+	    <string name="service_client_blank">Informe al cliente.</string>
+	    <string name="service_type_of_service_blank">Introduzca el tipo de servicio.</string>
+		<string name="service_error">Se produjo un error al intentar realizar la operación.</string>
+		<string name="service_sucess">Operación exitosa.</string>	    
+	    
+	    
+	<!-- Context Menu messages -->
+	<string name="context_menu_update">Actualizar</string>
+	<string name="context_menu_delete">Borrar</string>
+	<string name="context_menu_register">Registro</string>
+	
+	<!-- Standard Buttons -->
+	<string name="btn_register">Registro</string>
+	<string name="btn_update">Actualizar</string>
+	<string name="btn_call">Llamar</string>
+	<string name="btn_email">Email</string>
+	<string name="btn_address">Dirección</string>
+	
+	<!-- Standard Messages -->	
+	<string name="send_email">Enviar E-mail</string>
+	
+	<!-- Rate Messages -->
+	<string name="rate_msg_title">Tarefa </string>
+	<string name="rate_msg1">Si te gusta usar </string>
+	<string name="rate_msg2">, por favor, invertir un momento para evaluar la misma. Gracias por la ayuda!</string>
+	<string name="rate_msg_btn_remind">Recuérdame más tarde</string>
+	<string name="rate_msg_btn_no">No, gracias</string>
+	
+	<!-- maintenance Messages -->
+	<string name="under_constructior_msg">Bajo construcción </string>    
+    
+    
+</resources>

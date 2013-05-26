@@ -1,10 +1,6 @@
 package info.diegoramos.smartjobs.utils;
 
-<<<<<<< HEAD
 import info.diegoramos.smartjobs2.R;
-=======
-import info.diegoramos.smartjobs.R;
->>>>>>> ce5e6909afed8fac9b7e1284789a2206337555bd
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
