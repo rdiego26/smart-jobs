@@ -11,7 +11,7 @@
     
     <LinearLayout 
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp">
@@ -32,24 +32,26 @@
 			android:singleLine="true"
 			android:hint="@string/txt_location_hint"/>
         	
-		<Button 
-		    android:id="@+id/btn_buscar_filtro_indeed_search"
-		    android:text="@string/btn_search"
-		    android:background="@drawable/custom_button"
-		    style="@style/RegisterUpdateButton"
-		    android:onClick="efetuarBusca"
-		    />
-		
+	    <Button 
+	    android:id="@+id/btn_buscar_filtro_indeed_search"
+	    android:text="@string/btn_search"
+	    android:background="@drawable/custom_button"
+	    style="@style/RegisterUpdateButton"
+	    android:onClick="efetuarBusca"
+	    />
+
     </LinearLayout>
     
-
-	    	    
-	<ListView
-		android:id="@+id/indeed_search_result_list"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:scrollbars="vertical" 
-		android:divider="@drawable/listview_divider"
-	/>    	            
-	    
+    <RelativeLayout
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"> 
+		<ListView
+			android:id="@+id/indeed_search_result_list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="vertical" 
+			android:divider="@drawable/listview_divider"
+		/>
+	</RelativeLayout>
 </LinearLayout>

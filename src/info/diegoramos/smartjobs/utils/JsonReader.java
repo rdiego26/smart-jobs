@@ -3,6 +3,7 @@ package info.diegoramos.smartjobs.utils;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.URLEncoder;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -13,7 +14,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.net.Uri;
 import android.util.Log;
 
 public class JsonReader {
@@ -62,14 +62,15 @@ public class JsonReader {
     	//TODO considerar utilizar Preferencias
     	String limit = "10";
     	
-    	StringBuilder stringBuilder = new StringBuilder()
+    	@SuppressWarnings("deprecation")
+		StringBuilder stringBuilder = new StringBuilder()
     		.append("http://api.indeed.com/ads/apisearch?publisher=1271650249569682&sort=&radius=&st=&jt=&start=")
     		.append("&limit=" + limit + "&fromage=&latlong=1&co=us&chnl=&v=2&format=json")
-    		.append("&q=" + filterTerm)
-    		.append("&l=" + filterLocalion);
+    		.append("&q=" + URLEncoder.encode(filterTerm))
+    		.append("&l=" + URLEncoder.encode(filterLocalion));
     	
     		//Using URI to encode HTML chars
-    	return Uri.parse(stringBuilder.toString()).toString();
+    	return stringBuilder.toString();
     }
     
 }

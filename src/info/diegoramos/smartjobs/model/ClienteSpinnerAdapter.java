@@ -1,8 +1,7 @@
 package info.diegoramos.smartjobs.model;
 
-import info.diegoramos.smartjobs2.R;
 import info.diegoramos.smartjobs.persistence.DAOClient;
-import info.diegoramos.smartjobs.persistence.DAOTypeOfService;
+import info.diegoramos.smartjobs2.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

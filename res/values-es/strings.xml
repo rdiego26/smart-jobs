@@ -8,7 +8,10 @@
     <!-- Indeed Search -->
     <string name="txt_term_hint">Plazo</string>
     <string name="txt_location_hint">Ubicación</string>
-    <string name="btn_search">Buscar</string>    
+    <string name="btn_search">Buscar</string>
+    <string name="indeed_searching_title">Buscar en el hecho</string>  
+    <string name="indeed_searching_msg">La obtención de datos Indeed...</string>
+    <string name="indeed_search_blank">No hay resultados</string>  
     	<!-- Indeed List Item -->
     	<string name="lbl_indeed_search_jobtitle">Título</string>
     	<string name="lbl_indeed_search_company">Negocios</string>

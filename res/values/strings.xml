@@ -9,6 +9,9 @@
     <string name="txt_term_hint">Termo</string>
     <string name="txt_location_hint">Localização</string>
     <string name="btn_search">Buscar</string>
+	<string name="indeed_searching_title">Busca no Indeed</string>
+    <string name="indeed_searching_msg">Obtendo dados do Indeed...</string>
+    <string name="indeed_search_blank">Nenhum resultado encontrado</string>
     	<!-- Indeed List Item -->
     	<string name="lbl_indeed_search_jobtitle">Título</string>
     	<string name="lbl_indeed_search_company">Empresa</string>

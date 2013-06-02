@@ -18,7 +18,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
@@ -50,7 +49,7 @@ public class IndeedSearch extends Activity {
 		// Map Components
 		txtTerm = (EditText) findViewById(R.id.txt_termo_filtro_indeed_search);
 		txtLocation = (EditText) findViewById(R.id.txt_localizacao_filtro_indeed_search);
-		lstResults = (ListView) findViewById(R.id.indeed_search_result_list);	
+		lstResults = (ListView) findViewById(R.id.indeed_search_result_list);
 		configureActionBar();
 	}
 	
@@ -111,6 +110,7 @@ public class IndeedSearch extends Activity {
     				);
     	
     	new IndeedSearchTask().execute(url.toString());
+		
     }
 
     /**
@@ -126,8 +126,9 @@ public class IndeedSearch extends Activity {
     		listaResultados.clear();
     		
     		dialog = new ProgressDialog(IndeedSearch.this);
+    		dialog.setTitle(R.string.indeed_searching_title);
+    		dialog.setMessage( getString(R.string.indeed_searching_msg) );
     		dialog.show();
-    		//dialog.show(IndeedSearch.this, "Indeed Search", "Aguarde...");
     	}
 
 		@Override
@@ -166,7 +167,7 @@ public class IndeedSearch extends Activity {
 			return listaResultados;
 		}
     	
-    	@Override
+		@Override
     	protected void onPostExecute(List<IndeedResult> results) {
     		super.onPostExecute(results);
     		
@@ -174,8 +175,7 @@ public class IndeedSearch extends Activity {
     			indeedResultAdapter.updateIndeedResults(results);
     			lstResults.setAdapter(indeedResultAdapter);
     		}
-   			
-    		Log.d("Total de resultados(onPostExecute): ", String.valueOf(results.size()));
+    		
     		dialog.dismiss();
     	}
     	
