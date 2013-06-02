@@ -1,5 +1,6 @@
 package info.diegoramos.smartjobs.view;
 
+import info.diegoramos.smartjobs.components.IndeedResultAdapter;
 import info.diegoramos.smartjobs.external.IndeedResult;
 import info.diegoramos.smartjobs.utils.JsonReader;
 import info.diegoramos.smartjobs.utils.ToastManager;
@@ -17,9 +18,9 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -32,7 +33,9 @@ public class IndeedSearch extends Activity {
 	private EditText txtTerm;
 	private EditText txtLocation;
 	private ListView lstResults;
+	
 	private List<IndeedResult> listaResultados = new ArrayList<IndeedResult>();
+	private IndeedResultAdapter indeedResultAdapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +45,12 @@ public class IndeedSearch extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.indeed_search);
 		
+		indeedResultAdapter = new IndeedResultAdapter(this);
 
 		// Map Components
 		txtTerm = (EditText) findViewById(R.id.txt_termo_filtro_indeed_search);
 		txtLocation = (EditText) findViewById(R.id.txt_localizacao_filtro_indeed_search);
-		lstResults = (ListView) findViewById(R.id.indeed_search_list);		
+		lstResults = (ListView) findViewById(R.id.indeed_search_result_list);	
 		configureActionBar();
 	}
 	
@@ -108,13 +112,12 @@ public class IndeedSearch extends Activity {
     	
     	new IndeedSearchTask().execute(url.toString());
     }
-    
-    
+
     /**
      * Tratamento da busca no Indeed
      */
 
-    private class IndeedSearchTask extends AsyncTask<String, Void, String[]> {
+    private class IndeedSearchTask extends AsyncTask<String, Void, List<IndeedResult>> {
     	ProgressDialog dialog;
     	
     	@Override
@@ -128,9 +131,8 @@ public class IndeedSearch extends Activity {
     	}
 
 		@Override
-		protected String[] doInBackground(String... params) {
+		protected List<IndeedResult> doInBackground(String... params) {
 			String urlRecebida = params[0];
-			String[] result = null;
 			
 			if(TextUtils.isEmpty(urlRecebida)){ 
 				return null;
@@ -156,41 +158,26 @@ public class IndeedSearch extends Activity {
 					
 					listaResultados.add(resultado);
 				}
-				StringBuilder sb = new StringBuilder();
-    			
-				result = new String[listaResultados.size()];
-				
-				
-				for(IndeedResult r : listaResultados) {
-    				
-    				sb.append(r.getSnippet() + "<>");
-    			}
-				
-    			result = sb.toString().split("<>");
-				
-				
 				
 			} catch (Exception e) {
 				ToastManager.show(IndeedSearch.this, e.toString(), 2);
 			}
 			
-			return result;
+			return listaResultados;
 		}
     	
     	@Override
-    	protected void onPostExecute(String[] result) {
-    		super.onPostExecute(result);
+    	protected void onPostExecute(List<IndeedResult> results) {
+    		super.onPostExecute(results);
     		
-    		if(result != null) {
-    			ArrayAdapter<String> adaptder = new ArrayAdapter<String>
-    				(getBaseContext(), android.R.layout.simple_list_item_1, result);
-    			
-    			lstResults.setAdapter(adaptder);
+    		if(results != null) {
+    			indeedResultAdapter.updateIndeedResults(results);
+    			lstResults.setAdapter(indeedResultAdapter);
     		}
-   			dialog.dismiss();
+   			
+    		Log.d("Total de resultados(onPostExecute): ", String.valueOf(results.size()));
+    		dialog.dismiss();
     	}
     	
     }
-
-
 }

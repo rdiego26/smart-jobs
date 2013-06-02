@@ -12,7 +12,7 @@
         >
 		   	<com.markupartist.android.widget.ActionBar
 		      android:id="@+id/actionbar_client_list"
-		      style="@style/ActionBar" />        
+		      style="@style/Actionbar" />        
     </LinearLayout>
 
 
